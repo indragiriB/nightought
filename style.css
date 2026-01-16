@@ -27,11 +27,9 @@ html{
 .title h1{
     font-family: 'dotted';
     color: white;
-    font-size: 4vw;
     font-style: oblique;
     /* background-color: blue; */
     text-decoration: underline;
-      text-decoration-color: red; /* Sets the underline color to red */
 }
 .title h1:hover{
     color: red;
@@ -40,8 +38,6 @@ html{
     color: white;
     /* background-color: violet; */
     margin-top: -10px;
-    text-align: center;
-      font-size: 2vw;
     font-family: 'nerd';
 }
 .post{
@@ -57,15 +53,31 @@ html{
 .post-hero h1{
  font-family: 'dotted';
     text-decoration: underline;
-     text-decoration-color: red; /* Sets the underline color to red */
 }
-.post-hero p{
+.post-hero  p{
     font-family: 'nerd';
 }
 .post-hero{
     color: white;
-   
     /* background-color: aqua; */
     width: 70%;
     font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .title h1{
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 15px;
+    }
+    .post-hero {
+        align-items: center;
+        
+        width: 100%;
+    }
+    .post-hero h1{
+        text-align: center;
+    }
+ 
 }
