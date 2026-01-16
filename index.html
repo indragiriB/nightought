@@ -12,44 +12,93 @@
     <p>a part of my mind that i would like to share</p>
  </div>
 
- <div class="post">
+<div class="post">
     <div class="post-hero">
-        <h1> <span>*</span> My opinion on doom scroll</h1>
-        <p>I think doom scroll is becoming a bad habbit that we should avoid. 
-            imagine waking up, glued to your phone. 
+      <div class="post-title">
+          <h1> <span>*</span> My opinion on doom scroll<span>*</span></h1>
+          <p class="tanggal" data-date="2026-01-16T22:30:00"></p>
+      </div>
+        <p>I think doom scroll is becoming a bad habit that we should avoid. 
+            Imagine waking up, glued to your phone. 
             Phone is the first thing you grab after you wake up,
-             how can this be more depressed?. 
-            I think is that we as a human should take full control of ourselves.
-            No matter how tempting our phone is, we have to say NO. Take a breathe, get your minds right.
+            how can this be more depressing? 
+            I think we as humans should take full control of ourselves.
+            No matter how tempting our phone is, we have to say NO. Take a breath, get your minds right.
         </p>
     </div>
- </div>
+</div>
 
   <div class="post">
     <div class="post-hero">
-        <h1> <span>*</span> My opinion on doom scroll</h1>
-        <p>I think doom scroll is becoming a bad habbit that we should avoid. 
-            imagine waking up, glued to your phone. 
+      <div class="post-title">
+          <h1> <span>*</span> My opinion on doom scroll <span>*</span></h1>
+          <p class="tanggal" data-date="2026-01-16T22:30:00" ></p>
+      </div>
+        <p>I think doom scroll is becoming a bad habit that we should avoid. 
+            Imagine waking up, glued to your phone. 
             Phone is the first thing you grab after you wake up,
-             how can this be more depressed?. 
-            I think is that we as a human should take full control of ourselves.
-            No matter how tempting our phone is, we have to say NO. Take a breathe, get your minds right.
+            how can this be more depressing? 
+            I think we as humans should take full control of ourselves.
+            No matter how tempting our phone is, we have to say NO. Take a breath, get your minds right.
         </p>
     </div>
- </div>
+</div>
 
-  <div class="post">
+<div class="post">
     <div class="post-hero">
-        <h1> <span>*</span> My opinion on doom scroll</h1>
-        <p>I think doom scroll is becoming a bad habbit that we should avoid. 
-            imagine waking up, glued to your phone. 
+      <div class="post-title">
+          <h1> <span>*</span> My opinion on doom scroll<span>*</span></h1>
+          <p class="tanggal" data-date="2026-01-16T22:30:00"></p>
+      </div>
+        <p>I think doom scroll is becoming a bad habit that we should avoid. 
+            Imagine waking up, glued to your phone. 
             Phone is the first thing you grab after you wake up,
-             how can this be more depressed?. 
-            I think is that we as a human should take full control of ourselves.
-            No matter how tempting our phone is, we have to say NO. Take a breathe, get your minds right.
+            how can this be more depressing? 
+            I think we as humans should take full control of ourselves.
+            No matter how tempting our phone is, we have to say NO. Take a breath, get your minds right.
         </p>
     </div>
- </div>
+</div>
+<script>
+function updateTimeAgo() {
+    const tanggalElements = document.querySelectorAll('.tanggal');
 
+    tanggalElements.forEach(el => {
+        const rawDate = el.getAttribute('data-date');
+        if (!rawDate) return;
+
+        const postDate = new Date(rawDate);
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - postDate) / 1000);
+
+        let text = '';
+
+        if (diffInSeconds < 60) {
+            text = 'JUST NOW';
+        } else if (diffInSeconds < 3600) {
+            const mins = Math.floor(diffInSeconds / 60);
+            text = `${mins}M AGO`;
+        } else if (diffInSeconds < 86400) {
+            const hours = Math.floor(diffInSeconds / 3600);
+            text = `${hours}H AGO`;
+        } else if (diffInSeconds < 604800) {
+            const days = Math.floor(diffInSeconds / 86400);
+            text = `${days}D AGO`;
+        } else {
+            // Jika lebih dari seminggu, tampilkan tanggal format Nothing OS
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            text = postDate.toLocaleDateString('en-GB', options).toUpperCase();
+        }
+
+        el.textContent = text;
+    });
+}
+
+// Jalankan fungsi saat halaman pertama kali dibuka
+updateTimeAgo();
+
+// Jalankan fungsi otomatis setiap 60 detik (60000 ms)
+setInterval(updateTimeAgo, 60000);
+</script>
 </body>
 </html>

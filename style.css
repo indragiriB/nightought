@@ -30,6 +30,7 @@ html{
     font-style: oblique;
     /* background-color: blue; */
     text-decoration: underline;
+    text-decoration-color: #888888;
 }
 .title h1:hover{
     color: red;
@@ -50,21 +51,33 @@ html{
 
     display: flex;
 }
+.post-title{
+    display: flex;
+    justify-content: space-between;
+}
 
 .post-hero h1{
  font-family: 'dotted';
     text-decoration: underline;
+      text-decoration-color: #888888;
 }
 .post-hero  p{
     font-family: 'nerd';
 }
 .post-hero{
     color: white;
+
     /* background-color: aqua; */
     padding: 20px;
     width: 70%;
         background-color: #1a1a1a;
     font-weight: 100;
+}
+
+.tanggal{
+    color: #888888;
+     padding: 20px;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -86,5 +99,22 @@ html{
         font-size: 20px;
         text-align: justify;
     }
- 
+    .post-title{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .post-title .tanggal{
+        padding: none;
+        text-align: end;
+
+    }
+
+    .tanggal{
+    color: #888888;
+     padding: 0;
+    }
+    .post-title h1{
+        text-align: justify;
+    }
 }
