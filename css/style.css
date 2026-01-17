@@ -19,6 +19,8 @@ html{
     background-color: #000000;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 .title h1{
     color: #353535;
@@ -26,12 +28,68 @@ html{
     letter-spacing: 5px;
     font-size: 100px;
 }
-a{
-    color: white;
-}
+
 .title p{
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'nerd';
     font-weight: bold;
+}
+.title{
+    /* background-color: blue; */
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+    .title h1{
+        font-size: 40px;
+    }
+    .title p{
+        font-size: 20px;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    /* background-color: blue; */
+   justify-content: flex-end;
+
+   
+   
+}
+.button p a{
+  
+
+    font-family: 'nerd';
+    font-weight: bolder;
+   
+    
+}
+.btn-red a{
+      background-color:  #ff0000;
+          padding: 15px;
+          color: white;
+}
+.btn-white a{
+      background-color:  white;
+          padding: 15px;
+          color: black;
+}
+.btn-gray a{
+      background-color: #353535;
+          padding: 15px;
+          color: white;
+}
+
+.button{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+
 }
