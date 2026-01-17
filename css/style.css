@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'nerd'; 
+    src: url('../fonts/nerd.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'dotted'; 
+    src: url('../fonts/dotted.ttf') format('truetype');
+
+}
+.red{
+    color: #ff0000;
+}
+.white{
+    color: white;
+    text-decoration: underline;
+}
+html{
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+.title h1{
+    color: #353535;
+    font-family: 'dotted';
+    letter-spacing: 5px;
+    font-size: 100px;
+}
+a{
+    color: white;
+}
+.title p{
+    color: white;
+    font-size: 60px;
+    font-family: 'nerd';
+    font-weight: bold;
+}
