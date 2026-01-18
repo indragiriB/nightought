@@ -123,7 +123,7 @@ a{
 
 /* --- Mobile Responsive (NOTHING OS STYLE) --- */
 @media screen and (max-width: 600px) {
-    .hamburger {
+   .hamburger {
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -132,13 +132,13 @@ a{
     }
 
     /* Garis Hamburger Minimalis */
-    .hamburger .red {
+    .hamburger span {
         display: block;
-       font-size: 60px;
-       font-family: 'dotted';
+        width: 25px;
+        height: 2px;
+        background: #fff;
         transition: 0.3s;
     }
-
     .button {
         position: fixed;
         top: 0;
@@ -175,7 +175,7 @@ a{
     .nav h1{
         font-size: 25px;
         margin: -10px;
-        margin-top: -35px;
+        
     }
 
     .nav{
