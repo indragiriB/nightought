@@ -45,7 +45,7 @@ html{
 }
 @media only screen and (max-width: 600px) {
     .title h1{
-        font-size: 40px;
+        font-size: 50px;
     }
     .title p{
         font-size: 20px;
@@ -55,14 +55,38 @@ a{
     text-decoration: none;
 }
 
-.nav{
+/* --- Desktop Style --- */
+.nav {
     display: flex;
-    /* background-color: blue; */
-   justify-content: flex-end;
-
-   
-   
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #000;
 }
+
+.button {
+    display: flex;
+    gap: 15px;
+
+}
+
+.menu-toggle, .hamburger {
+    display: none; /* Sembunyikan di desktop */
+}
+
+
+
+/* Style Tombol Dasar */
+.button p a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding:  16px;
+    display: block;
+    border-radius: 4px;
+}
+
 .button p a{
   
 
@@ -85,6 +109,86 @@ a{
       background-color: #353535;
           padding: 15px;
           color: white;
+}
+
+.nav h1{
+    margin: 20px;
+    text-align: center;
+    color: white;
+    padding: 18px;
+    font-family: 'nerd';
+} 
+
+
+/* --- Mobile Responsive (NOTHING OS STYLE) --- */
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    /* Garis Hamburger Minimalis */
+    .hamburger .red {
+        display: block;
+       font-size: 60px;
+       font-family: 'dotted';
+        transition: 0.3s;
+    }
+
+    .button {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Sembunyikan ke kanan */
+        width: 80%;
+        height: 100vh;
+        background: #000;
+        border-left: 1px solid #333;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+        z-index: 90;
+    }
+
+    /* Munculkan Menu saat Klik */
+    .menu-toggle:checked ~ .button {
+        right: 0;
+    }
+
+    /* Animasi X pada Hamburger saat Aktif */
+    .menu-toggle:checked ~ .hamburger span:nth-child(1) {
+        transform: translateY(4px) rotate(45deg);
+        background: #ff0000; /* Berubah merah saat open */
+    }
+    .menu-toggle:checked ~ .hamburger span:nth-child(2) {
+        transform: translateY(-4px) rotate(-45deg);
+    }
+
+    .button p {
+        width: 80%;
+        text-align: center;
+    }
+    .nav h1{
+        font-size: 25px;
+        margin: -10px;
+        margin-top: -35px;
+    }
+
+    .nav{
+        padding: 10px;
+    }
+}
+/* 
+.nav{
+    display: flex;
+    background-color: blue;
+   justify-content: space-between;
+
+   
+   
 }
 
 .button{
