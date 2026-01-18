@@ -48,7 +48,8 @@ html{
         font-size: 50px;
     }
     .title p{
-        font-size: 20px;
+        font-size: 30px;
+        margin: 0;
     }
 }
 a{
