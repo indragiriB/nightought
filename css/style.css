@@ -1,44 +1,51 @@
 @font-face {
-    font-family: 'nerd'; 
+    font-family: 'nerd';
     src: url('../fonts/nerd.ttf') format('truetype');
 
 }
+
 @font-face {
-    font-family: 'dotted'; 
+    font-family: 'dotted';
     src: url('../fonts/dotted.ttf') format('truetype');
 
 }
-.red{
+
+.red {
     color: #D71921;
 }
-.body{
+
+.body {
     margin: 0;
 }
-.white{
-    color:#F1F1F1;
+
+.white {
+    color: #F1F1F1;
     text-decoration: underline;
 }
-html{
+
+html {
     background-color: #000000;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     width: 100%;
 }
-.title h1{
+
+.title h1 {
     color: #353535;
     font-family: 'dotted';
     letter-spacing: 5px;
     font-size: 100px;
 }
 
-.title p{
+.title p {
     color: #F1F1F1;
     font-size: 50px;
     font-family: 'nerd';
     font-weight: bold;
 }
-.title{
+
+.title {
     /* background-color: blue; */
     width: 90%;
     margin: 20px;
@@ -46,16 +53,19 @@ html{
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 @media only screen and (max-width: 600px) {
-    .title h1{
+    .title h1 {
         font-size: 50px;
     }
-    .title p{
+
+    .title p {
         font-size: 30px;
         margin: 0;
     }
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -74,8 +84,10 @@ a{
 
 }
 
-.menu-toggle, .hamburger {
-    display: none; /* Sembunyikan di desktop */
+.menu-toggle,
+.hamburger {
+    display: none;
+    /* Sembunyikan di desktop */
 }
 
 
@@ -86,48 +98,51 @@ a{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    padding:  16px;
+    padding: 16px;
     display: block;
     border-radius: 4px;
 }
 
-.button p a{
-  
+.button p a {
+
 
     font-family: 'nerd';
     font-weight: bolder;
-   
-    
-}
-.btn-red a{
-      background-color: #D71921;
-          padding: 15px;
-          color: #F1F1F1;
-}
-.btn-white a{
-      background-color:  #F1F1F1;
-          padding: 15px;
-          color: black;
-}
-.btn-gray a{
-      background-color: #353535;
-          padding: 15px;
-          color: #F1F1F1;
+
+
 }
 
-.nav h1{
+.btn-red a {
+    background-color: #D71921;
+    padding: 15px;
+    color: #F1F1F1;
+}
+
+.btn-white a {
+    background-color: #F1F1F1;
+    padding: 15px;
+    color: black;
+}
+
+.btn-gray a {
+    background-color: #353535;
+    padding: 15px;
+    color: #F1F1F1;
+}
+
+.nav h1 {
     margin: 20px;
     text-align: center;
     color: #F1F1F1;
     padding: 18px;
-margin-left: -5px;
+    margin-left: -5px;
     font-family: 'nerd';
-} 
+}
 
 
 /* --- Mobile Responsive (NOTHING OS STYLE) --- */
 @media screen and (max-width: 600px) {
-   .hamburger {
+    .hamburger {
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -143,10 +158,12 @@ margin-left: -5px;
         background: #fff;
         transition: 0.3s;
     }
+
     .button {
         position: fixed;
         top: 0;
-        right: -100%; /* Sembunyikan ke kanan */
+        right: -100%;
+        /* Sembunyikan ke kanan */
         width: 80%;
         height: 100vh;
         background: #000;
@@ -154,21 +171,23 @@ margin-left: -5px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         z-index: 90;
     }
 
     /* Munculkan Menu saat Klik */
-    .menu-toggle:checked ~ .button {
+    .menu-toggle:checked~.button {
         right: 0;
     }
 
     /* Animasi X pada Hamburger saat Aktif */
-    .menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    .menu-toggle:checked~.hamburger span:nth-child(1) {
         transform: translateY(4px) rotate(45deg);
-        background: #ff0000; /* Berubah merah saat open */
+        background: #ff0000;
+        /* Berubah merah saat open */
     }
-    .menu-toggle:checked ~ .hamburger span:nth-child(2) {
+
+    .menu-toggle:checked~.hamburger span:nth-child(2) {
         transform: translateY(-4px) rotate(-45deg);
     }
 
@@ -176,63 +195,71 @@ margin-left: -5px;
         width: 80%;
         text-align: center;
     }
-    .nav h1{
+
+    .nav h1 {
         font-size: 25px;
         margin: -10px;
-        
+
     }
 
-    .nav{
+    .nav {
         padding: 10px;
-       
+
         height: 100px;
     }
-    .title{
+
+    .title {
         margin-top: 0;
     }
 }
-.pallete .gray{
+
+.pallete .gray {
     background-color: #353535;
-    width: 200px;
-       font-family: 'dotted';
+    width: 300px;
+    font-family: 'dotted';
     height: 500px;
 }
-.pallete .red{
+
+.pallete .red {
     background-color: #D71921;
-     width: 200px;
+    width: 300px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-        font-family: 'dotted';
+    font-family: 'dotted';
     height: 500px;
 }
-.pallete .white{
+
+.pallete .white {
     background-color: #F1F1F1;
-    width: 200px;
+    width: 300px;
     height: 500px;
-       font-family: 'dotted';
+    font-family: 'dotted';
 }
-.pallete .light-gray{
+
+.pallete .light-gray {
     background-color: #535353;
-   width: 200px;
+    width: 300px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 500px;
-       font-family: 'dotted';
+    font-family: 'dotted';
 }
-.pallete .black{
+
+.pallete .black {
     background-color: #000000;
-     width: 200px;
+    width: 300px;
     height: 500px;
-   
-       font-family: 'dotted';
-    border:   1px solid rgba(255, 255, 255, 0.219);
+
+    font-family: 'dotted';
+    border: 1px solid rgba(255, 255, 255, 0.219);
     border-left: 0;
 }
-.pallete{
+
+.pallete {
     display: flex;
 }
 
-.wrap-pallete{
+.wrap-pallete {
     background-color: #000000;
     margin-top: 150px;
     display: flex;
@@ -240,111 +267,140 @@ margin-left: -5px;
     flex-wrap: wrap;
 
 }
-.wrap-pallete h1{
+
+.wrap-pallete h1 {
     font-family: 'dotted';
     color: #F1F1F1;
     font-size: 100px;
 }
-.child-red .red{
-    color:#F1F1F1;
-       font-family: 'dotted';
-          border: 1px solid rgba(255, 255, 255, 0.384);
+
+.child-red .red {
+    color: #F1F1F1;
+    font-family: 'dotted';
+    border: 1px solid rgba(255, 255, 255, 0.384);
 }
-.child-red .white{
+
+.child-red .white {
     color: rgb(0, 0, 0);
     text-decoration: none;
-       font-family: 'dotted';
+    font-family: 'dotted';
 }
-.child-red{
-    color:#F1F1F1;
+
+.child-red {
+    color: #F1F1F1;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-    .wrap-pallete h1{
-    font-size: 40px;
-}
+    .wrap-pallete h1 {
+        font-size: 40px;
+    }
 
 
-.wrap-pallete{
-    width: 100%;
-  
-   
-}
-.pallete{
-    flex-direction: column;
-}
-.pallete .gray{
-    background-color: #353535;
-      width: 100svw;
-    height: 200px;
-}
-.pallete .red{
-    background-color: #D71921;
-     border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-     width: 100svw;
-    height: 200px;
-}
-.pallete .white{
-    background-color:#F1F1F1;
-       width: 100svw;
-    height: 200px;
-}
-.pallete .light-gray{
-    background-color: #535353;
-     width: 100svw;
+    .wrap-pallete {
+        width: 100%;
+
+
+    }
+
+    .pallete {
+        flex-direction: column;
+    }
+
+    .pallete .gray {
+        background-color: #353535;
+        width: 100svw;
+        height: 200px;
+    }
+
+    .pallete .red {
+        background-color: #D71921;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        width: 100svw;
+        height: 200px;
+    }
+
+    .pallete .white {
+        background-color: #F1F1F1;
+        width: 100svw;
+        height: 200px;
+    }
+
+    .pallete .light-gray {
+        background-color: #535353;
+        width: 100svw;
         border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+        border-bottom-right-radius: 0px;
 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 200px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 200px;
+    }
+
+    .pallete .black {
+        background-color: #000000;
+        width: 100svw;
+        height: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.219);
+        border-left: 0;
+    }
+
+    .pallete .black p {
+        margin-top: 80px;
+        font-family: 'dotted';
+    }
+
+    .pallete .white p {
+        margin-top: 80px;
+        font-family: 'dotted';
+    }
+
+    .pallete .red p {
+        margin-top: 80px;
+        font-family: 'dotted';
+    }
+
+    .pallete .gray p {
+        margin-top: 80px;
+        font-family: 'dotted';
+    }
+
+    .pallete .light-gray p {
+        margin-top: 80px;
+        font-family: 'dotted';
+
+
+
+    }
 }
-.pallete .black{
-    background-color: #000000;
-   width: 100svw;
-    height: 200px;
-    border:   1px solid rgba(255, 255, 255, 0.219);
-    border-left: 0;
-}
-.pallete .black p{
-    margin-top: 80px;
-    font-family: 'dotted';
-}
-.pallete .white p{
-    margin-top: 80px;
-       font-family: 'dotted';
-}
-.pallete .red p{
-    margin-top: 80px;
-       font-family: 'dotted';
+
+.journey{
+    display: flex;
+    padding: 20px;
+    
 }
 
-.pallete .gray p{
-    margin-top: 80px;
-       font-family: 'dotted';
+.journey-title{
+  
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
-.pallete .light-gray p{
-    margin-top: 80px;
-       font-family: 'dotted';
+.journey-title h1{
+      font-family: 'dotted';
+      font-size: 100px;
+        color: #353535;
 
- 
- 
 }
-
-
-
-
-
-
-
-
-
+.journey-title p{
+    font-family: 'nerd';
+  
+    font-size: 50px;
 }
