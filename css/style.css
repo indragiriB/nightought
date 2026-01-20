@@ -390,6 +390,8 @@ a {
   
     display: flex;
     flex-direction: column;
+text-align: center;
+    justify-content: center;
     color: white;
 }
 
@@ -403,4 +405,84 @@ a {
     font-family: 'nerd';
   
     font-size: 50px;
+}
+
+
+
+
+
+
+.journey-titler{
+  
+    display: flex;
+    flex-direction: column;
+text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.journey-titler h1{
+      font-family: 'dotted';
+      font-size: 100px;
+        color: #353535;
+
+}
+.journey-titler p{
+    font-family: 'nerd';
+  
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all-journey img{
+    filter: grayscale(90%);
+    width: 40svw;
+   background-position: center;
+   object-fit: cover;
+    height: 50svw;
+}
+.all-journey {
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+    .journey-titler{
+  
+    display: flex;
+    flex-direction: column;
+text-align: start;
+letter-spacing: 2px;
+  padding: 20px;
+    color: white;
+}
+
+.journey-titler h1{
+      font-family: 'dotted';
+      font-size: 50px;
+        color: #353535;
+
+}
+.journey-titler p{
+    font-family: 'nerd';
+  
+    font-size: 30px;
+}
+
+
+
+
 }
