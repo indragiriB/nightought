@@ -459,7 +459,19 @@ a {
     margin-top: 150px;
 }
 
+.journey-titler span {
+    font-size: 50px;
+    font-family: 'dotted';
+}
+
 @media screen and (max-width: 600px) {
+
+
+
+    .journey-titler span {
+        font-size: 20px;
+        font-family: 'dotted';
+    }
 
 
 
@@ -511,21 +523,20 @@ a {
         font-size: 30px;
     }
 
-    .journey{
+    .journey {
         flex-direction: column-reverse;
         padding: 0;
     }
 
     .all-journey img {
-    filter: grayscale(90%);
-    width: 100%;
-  overflow-x: hidden;
-    background-position: center;
-    object-fit: cover;
-    gap: 20px
-    ;
-    height: 70svw;
-}
+        filter: grayscale(90%);
+        width: 100%;
+        overflow-x: hidden;
+        background-position: center;
+        object-fit: cover;
+        gap: 20px;
+        height: 70svw;
+    }
 
 
 
