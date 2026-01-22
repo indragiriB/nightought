@@ -542,3 +542,14 @@ a {
 
 
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer h1{
+    font-family: 'dotted';
+    font-size: 200px;
+    color: white;
+}
