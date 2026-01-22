@@ -546,10 +546,20 @@ a {
 .footer{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+    padding: 20px;
 }
 
 .footer h1{
     font-family: 'dotted';
-    font-size: 200px;
+    font-size: 10.5svw;
+    color: white;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'nerd';
     color: white;
 }
