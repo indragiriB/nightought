@@ -546,7 +546,7 @@ a {
 .footer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     background-color: red;
     padding: 20px;
@@ -562,4 +562,15 @@ a {
     justify-content: space-between;
     font-family: 'nerd';
     color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .footer{
+
+    align-items: center;
+    
+}
+
 }
