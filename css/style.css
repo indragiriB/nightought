@@ -543,6 +543,10 @@ a {
         height: 70svw;
     }
 
+    .reverse{
+        flex-direction: column;
+    }
+
 
 
 
