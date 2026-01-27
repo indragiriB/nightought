@@ -35,12 +35,13 @@ html {
 
 .journey {
     background-color:  #D71921;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+  justify-content: center;
+  height: 100svh;
+  width: 100%;
 
-    /* Tambahkan ini */
-    min-height: 100vh; /* Mengisi seluruh tinggi layar */
-    width: 100%;
+
+
 }
 
 .journey-title{
@@ -48,16 +49,73 @@ html {
     font-weight: 900;
     font-family: 'nerd';
     color: white;
-
     font-size: 100px;
 }
 
-.journey1 {
-    background-image: url('https://images.pdimagearchive.org/collections/sport-in-art/sportinart_0057.jpg?width=1400&height=800');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    /* Tambahkan ini */
-    min-height: 100vh; /* Mengisi seluruh tinggi layar */
-    width: 100%;
+@media screen and (max-width: 600px){
+    .journey-title{
+        font-size: 50px;
+        overflow-x: hidden;
+  
+      
+    }
 }
+
+.journey1 {
+  background-color: #353535;
+    display: flex;
+  justify-content: center;
+  height: 100svh;
+  width: 100%;
+
+
+
+}
+
+.journey-title1{
+    padding: 50px;
+    font-weight: 900;
+    font-family: 'nerd';
+    color: white;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .journey-title1{
+        font-size: 50px;
+        overflow-x: hidden;
+  
+      
+    }
+}
+
+
+.journey1 {
+  background-color: #353535;
+    display: flex;
+  justify-content: center;
+  height: 100svh;
+  width: 100%;
+
+
+
+}
+
+.journey-title1{
+    padding: 50px;
+    font-weight: 900;
+    font-family: 'nerd';
+    color: white;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .journey-title1{
+        font-size: 50px;
+        overflow-x: hidden;
+  
+      
+    }
+}
+
+
