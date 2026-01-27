@@ -12,7 +12,7 @@
 
 .red {
     color: #D71921;
-    
+
 }
 
 .body {
@@ -26,7 +26,7 @@
 }
 
 html {
-  
+
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -34,45 +34,66 @@ html {
 }
 
 .journey {
-    background-color:  #D71921;
+    background-color: #D71921;
     display: flex;
-  justify-content: center;
-  height: 100svh;
-  width: 100%;
+    justify-content: center;
+    height: 100svh;
+    width: 100%;
 
 
 
 }
 
-.journey-title{
-    padding: 50px;
+.journey-title h1{
+
     font-weight: 900;
     font-family: 'nerd';
     color: white;
     font-size: 100px;
 }
+.journey-title h2{
+    
+    font-weight: 900;
+    font-family: 'dotted';
+    color: white;
+    font-size: 50px;
+}
+.journey-title p{
+    
+ 
+    font-family: 'nerd';
+    color: white;
+    font-size: 30px;
+}
+.journey-title {
+    /* background-color: blue; */
+    width: 80svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-@media screen and (max-width: 600px){
-    .journey-title{
+@media screen and (max-width: 600px) {
+    .journey-title {
         font-size: 50px;
         overflow-x: hidden;
-  
-      
+
+
     }
 }
 
 .journey1 {
-  background-color: #353535;
+    background-color: #353535;
     display: flex;
-  justify-content: center;
-  height: 100svh;
-  width: 100%;
+    justify-content: center;
+    height: 100svh;
+    width: 100%;
 
 
 
 }
 
-.journey-title1{
+.journey-title1 {
     padding: 50px;
     font-weight: 900;
     font-family: 'nerd';
@@ -80,42 +101,40 @@ html {
     font-size: 100px;
 }
 
-@media screen and (max-width: 600px){
-    .journey-title1{
+@media screen and (max-width: 600px) {
+    .journey-title1 {
         font-size: 50px;
         overflow-x: hidden;
-  
-      
+
+
     }
 }
 
 
 .journey1 {
-  background-color: #353535;
+    background-color: #F1F1F1;
     display: flex;
-  justify-content: center;
-  height: 100svh;
-  width: 100%;
+    justify-content: center;
+    height: 100svh;
+    width: 100%;
 
 
 
 }
 
-.journey-title1{
+.journey-title1 {
     padding: 50px;
     font-weight: 900;
     font-family: 'nerd';
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 100px;
 }
 
-@media screen and (max-width: 600px){
-    .journey-title1{
+@media screen and (max-width: 600px) {
+    .journey-title1 {
         font-size: 50px;
         overflow-x: hidden;
-  
-      
+
+
     }
 }
-
-
