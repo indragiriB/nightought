@@ -44,27 +44,30 @@ html {
 
 }
 
-.journey-title h1{
+.journey-title h1 {
 
     font-weight: 900;
     font-family: 'nerd';
     color: white;
     font-size: 100px;
 }
-.journey-title h2{
-    
+
+.journey-title h2 {
+
     font-weight: 900;
     font-family: 'dotted';
     color: white;
     font-size: 50px;
 }
-.journey-title p{
-    
- 
+
+.journey-title p {
+
+
     font-family: 'nerd';
     color: white;
     font-size: 30px;
 }
+
 .journey-title {
     /* background-color: blue; */
     width: 80svw;
@@ -74,12 +77,28 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-    .journey-title {
-        font-size: 50px;
-        overflow-x: hidden;
 
+    .journey-title {
+        /* background-color: blue; */
+        width: 100svw;
+        padding: 20px;
 
     }
+
+    .journey-title h1 {
+
+        font-size: 50px;
+    }
+
+    .journey-title h2 {
+
+    
+        font-size: 25px;
+    }
+    .journey-title p{
+        font-size: 25px;
+    }
+
 }
 
 .journey1 {
