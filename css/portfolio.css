@@ -12,6 +12,7 @@
 
 .red {
     color: #D71921;
+    
 }
 
 .body {
@@ -25,9 +26,38 @@
 }
 
 html {
-    background-color: #000000;
+  
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    width: 100%;
+}
+
+.journey {
+    background-color:  #D71921;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Tambahkan ini */
+    min-height: 100vh; /* Mengisi seluruh tinggi layar */
+    width: 100%;
+}
+
+.journey-title{
+    padding: 50px;
+    font-weight: 900;
+    font-family: 'nerd';
+    color: white;
+
+    font-size: 100px;
+}
+
+.journey1 {
+    background-image: url('https://images.pdimagearchive.org/collections/sport-in-art/sportinart_0057.jpg?width=1400&height=800');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Tambahkan ini */
+    min-height: 100vh; /* Mengisi seluruh tinggi layar */
     width: 100%;
 }

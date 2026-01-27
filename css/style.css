@@ -52,12 +52,17 @@ html {
     margin: 20px;
     display: flex;
     flex-direction: column;
+    padding: 50px;
     flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 600px) {
     .title h1 {
         font-size: 50px;
+    }
+
+    .title{
+        padding: 0;
     }
 
     .title p {
@@ -208,7 +213,7 @@ a {
     }
 
     .nav {
-        padding: 10px;
+    
 
         height: 100px;
     }
@@ -395,28 +400,30 @@ a {
 
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    padding: 100px;
-    justify-content: center;
-    color: white;
+text-align: center;
+    background-color: white;
+   
+    color: black;
 }
 
 .journey-title h1 {
     font-family: 'dotted';
     font-size: 100px;
+   
+
     color: #353535;
+    letter-spacing: 5px;
 
 }
 
 .journey-title p {
     font-family: 'nerd';
-
+text-align: justify;
+margin-left: 20px;
+margin-top: 0;
+margin-right: 20px;
     font-size: 50px;
 }
-
-
-
-
 
 
 .journey-titler {
@@ -430,6 +437,7 @@ a {
 .journey-titler h1 {
     font-family: 'dotted';
     font-size: 100px;
+    text-align: justify;
     color: #353535;
 
 }
@@ -442,26 +450,17 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .all-journey img {
     filter: grayscale(90%);
     width: 40svw;
     background-position: center;
     object-fit: cover;
-    height: 50svw;
+    height: 100%;
 }
 
 .all-journey {
     margin-top: 150px;
+    padding: 50px;
 }
 
 .journey-titler span {
@@ -492,6 +491,7 @@ a {
     .journey-titler h1 {
 
         font-size: 50px;
+        text-align: start;
 
 
     }
@@ -509,21 +509,24 @@ a {
     .journey-title {
 
 
-        text-align: start;
+       margin-top: 100px;
         letter-spacing: 2px;
-        padding: 20px;
+flex-direction: column;
+        
 
     }
 
     .journey-title h1 {
-
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
         font-size: 50px;
 
 
     }
 
     .journey-title p {
-
+    text-align: start;
 
         font-size: 30px;
     }
@@ -545,6 +548,10 @@ a {
 
     .reverse{
         flex-direction: column;
+    }
+
+    .all-journey{
+        padding: 0;
     }
 
 
