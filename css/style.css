@@ -61,7 +61,7 @@ html {
         font-size: 50px;
     }
 
-    .title{
+    .title {
         padding: 0;
     }
 
@@ -69,10 +69,11 @@ html {
         font-size: 30px;
         margin: 0;
     }
+
     .body {
-    margin: 0px;
-    padding: 0px;
-}
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 a {
@@ -213,7 +214,7 @@ a {
     }
 
     .nav {
-    
+
 
         height: 100px;
     }
@@ -400,28 +401,32 @@ a {
 
     display: flex;
     flex-direction: column;
-text-align: center;
+    text-align: center;
     background-color: white;
-   
+
     color: black;
 }
 
 .journey-title h1 {
     font-family: 'dotted';
     font-size: 100px;
-   
-
+    text-align: start;
     color: #353535;
+    margin-left: 20px;
+
+    margin-right: 20px;
     letter-spacing: 5px;
 
 }
 
+
+
 .journey-title p {
     font-family: 'nerd';
-text-align: justify;
-margin-left: 20px;
-margin-top: 0;
-margin-right: 20px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-right: 20px;
     font-size: 50px;
 }
 
@@ -509,24 +514,24 @@ margin-right: 20px;
     .journey-title {
 
 
-       margin-top: 100px;
+        margin-top: 100px;
         letter-spacing: 2px;
-flex-direction: column;
-        
+        flex-direction: column;
+
 
     }
 
     .journey-title h1 {
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
+        text-align: start;
+        margin-left: 20px;
+        margin-right: 20px;
         font-size: 50px;
 
 
     }
 
     .journey-title p {
-    text-align: start;
+        text-align: start;
 
         font-size: 30px;
     }
@@ -543,14 +548,14 @@ flex-direction: column;
         background-position: center;
         object-fit: cover;
         gap: 20px;
-        height: 70svw;
+
     }
 
-    .reverse{
+    .reverse {
         flex-direction: column;
     }
 
-    .all-journey{
+    .all-journey {
         padding: 0;
     }
 
@@ -559,7 +564,7 @@ flex-direction: column;
 
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -570,12 +575,13 @@ flex-direction: column;
     padding: 20px;
 }
 
-.footer h1{
+.footer h1 {
     font-family: 'dotted';
     font-size: 10.5svw;
     color: white;
 }
-.footer-text{
+
+.footer-text {
     display: flex;
     justify-content: space-between;
     font-size: 1.5dvw;
@@ -586,14 +592,15 @@ flex-direction: column;
 
 @media screen and (max-width: 600px) {
 
-    .footer{
+    .footer {
 
-    align-items: center;
-    
-}
-.footer-text{
-    font-size: 3svw;
-}
+        align-items: center;
+
+    }
+
+    .footer-text {
+        font-size: 3svw;
+    }
 
 
 
