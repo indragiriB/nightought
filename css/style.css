@@ -10,6 +10,50 @@
 
 }
 
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.8s ; /* Transisi keluar yang kaku */
+}
+
+.loader-content {
+  text-align: center;
+  font-family: 'Space Mono', monospace; /* Pastikan pakai font monospaced */
+  color: #F1F1F1;
+}
+
+#loader-text {
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  color: #D71921; /* Aksen Merah Nothing */
+}
+
+
+.progress-container {
+  width: 200px;
+  height: 2px;
+  background: #353535;
+  margin: 0 auto;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #D71921;
+}
+
+#loader-dots {
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
 .red {
     color: #D71921;
 }

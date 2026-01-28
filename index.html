@@ -10,6 +10,15 @@
 </head>
 
 <body style="margin: 0;" >
+  <div id="loader">
+  <div class="loader-content">
+    <div id="loader-dots"></div>
+    <p id="loader-text">INITIALIZING SYSTEM</p>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+</div>
 
   <div class="nav">
     <h1><span class="red">&</span>Indragiribhakti</h1>
@@ -207,6 +216,67 @@ window.addEventListener('mousedown', () => {
 });
 window.addEventListener('mouseup', () => {
   cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+});
+const palleteObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    const children = document.querySelectorAll('.child-red');
+    children.forEach((child, index) => {
+      setTimeout(() => {
+        child.style.opacity = '1';
+        child.style.transform = 'translateY(0)';
+      }, index * 100); // Muncul bergantian setiap 0.1 detik
+    });
+  }
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.child-red').forEach(c => {
+  c.style.opacity = '0';
+  c.style.transform = 'translateY(10px)';
+  c.style.transition = 'all 0.3s steps(4)'; // Efek muncul terpatah-patah (digital)
+});
+palleteObserver.observe(document.querySelector('.pallete'));
+window.addEventListener('load', () => {
+  const progressBar = document.getElementById('progress-bar');
+  const loaderText = document.getElementById('loader-text');
+  const loaderDots = document.getElementById('loader-dots');
+  const loader = document.getElementById('loader');
+  
+  let progress = 0;
+  const loadingPhrases = ["BOOTING...", "LOADING ASSETS...", "CONFIGURING UI...", "READY."];
+  
+  // Animasi Dot Matrix sederhana (titik-titik berkedip)
+  const dotInterval = setInterval(() => {
+    const dots = [".", "..", "...", "...."];
+    loaderDots.innerText = dots[Math.floor(Math.random() * dots.length)];
+  }, 200);
+
+  // Simulasi Progress Bar
+  const interval = setInterval(() => {
+    progress += Math.random() * 15; // Kecepatan acak biar terasa memproses data
+    
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      clearInterval(dotInterval);
+      
+      // Selesaikan loading
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+          // Trigger animasi masuk untuk konten utama jika ada (seperti script sebelumnya)
+        }, 800);
+      }, 500);
+    }
+
+    progressBar.style.width = progress + '%';
+    
+    // Ganti teks loading secara dinamis
+    if (progress > 25) loaderText.innerText = loadingPhrases[1];
+    if (progress > 60) loaderText.innerText = loadingPhrases[2];
+    if (progress > 90) loaderText.innerText = loadingPhrases[3];
+    
+  }, 150);
 });
 </script>
 
