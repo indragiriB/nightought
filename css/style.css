@@ -440,7 +440,30 @@ a {
     }
 }
 
-.journey {
+
+
+#title {
+    background: url();
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0;
+}
+
+#title p {
+    font-size: 100px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* .journey {
     display: flex;
  padding-top: 50px;
 
@@ -523,7 +546,7 @@ a {
 .journey-titler span {
     font-size: 50px;
     font-family: 'dotted';
-}
+} */
 
 @media screen and (max-width: 600px) {
 
@@ -659,3 +682,4 @@ a {
 
 
 }
+
